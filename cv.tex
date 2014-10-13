@@ -1,0 +1,268 @@
+\documentclass[line, margin]{res}
+
+\usepackage{aas_macros}
+
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {%\section*{\refname}% <--- outcommented
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+\begin{document}
+\name{Alex G. Kim}
+\address{Lawrence Berkeley National Laboratory\\
+1 Cyclotron Rd, MS: 50R6048\\
+Berkeley, CA 94720-8164\\
+agkim@lbl.gov
+}
+\begin{resume}
+
+\section{Education}
+Ph.D., Physics, University of California, Berkeley, Dec.\ 17 1996. {\it The Discovery of High-Redshift Supernovae and Their Cosmological Implications},
+Richard Muller \& Saul Perlmutter advisors\\
+M.A., Physics, University of California, Berkeley, 1994.\\
+B.S., Physics, Mathematics, University of Michigan, Ann Arbor,1991.
+
+\section{Professional Experience}
+\begin{tabular}{lp{4.4in}}
+2003-- & Staff Scientist, Physics Division,
+Lawrence Berkeley National Laboratory\\
+2002--2003 & Term Scientist, Physics Division,
+Lawrence Berkeley National Laboratory\\
+1999--2002 & Research Assistant, Center for Particle Astrophysics and Lawrence Berkeley National Laboratory\\
+1997--1999& Research Associate, Laboratoire de Physique Corpusculaire et Cosmologie,
+Coll{\`e}ge de France\\
+1992--1997 & Research Assistant, Center for Particle Astrophysics and Lawrence Berkeley Laboratory\\
+1989--1991 & Research Assistant, Physics Department, University of Michigan\\
+\end{tabular}
+
+\section{Honors and Awards}
+\begin{tabular}{ll}
+2007 & Cosmology Prize, Gruber Foundation\\
+1991 & Phi Beta Kappa\\
+1989--1990 & Northern Telecom Scholarship, Northern Telecom Inc., Vienna, Va.\\
+1988--1990 & Franklin Tillery Scholarship\\
+1988--1989 &  David Aspland Scholarship\\
+1988 & William Branstrom Freshman Prize\\
+1987--1991 & Angell Scholar\\
+\end{tabular}
+
+\section{Teaching Experience}
+\begin{tabular}{lp{4.4in}}
+2013 & University of California, Berkeley. Astro 260 Guest Lecturer\\
+2000--2002 & Tutor, Malcolm X Elementary School, Berkeley CA\\
+1991--1992 & University of California, Berkeley. Teaching assistant\\
+\end{tabular}
+
+\section{Professional Memberships}
+American Astronomical Society
+
+\section{Relevant Committees, and Service}
+DOE National Lab Day Committee, 2014\\
+LSST Cadence Workshop, Supernova Working Group co-Chair, 2014\\
+LBNL Diversity and Inclusion Committee, 2014--\\
+Distances Task Leader, Snowmass, 2013\\
+DES Spring 2013 Collaboration Meeting, Local Organizing Chair, 2012--2013\\
+Publications Committee, Nearby Supernova Factory, 2012--\\
+SN Ia Working Group Leader, LSST DESC, 2012--\\
+DES Spectroscopy Task Force Co-Chair, 2011--\\
+DES Collaboration Meeting Steering Committee, 2011--\\
+Referee for DOE-Office of Science proposals, 2010-- \\
+Referee for Astrophysical Journal, Astroparticle Physics, Journal of Cosmology and Astroparticle Physics, Publications of the Astronomical Society of the Pacific, Publications of the Astronomical Society of Australia 1997--\\
+Research supervisor for numerous students and postdocs, 1997--\\
+Member of several doctoral thesis committees 2008--\\
+SN Ia Spectroscopy Group leader, DES collaboration, 2008--2012\\
+Joint Dark Energy Mission Interim Science Working Group, 2010--2011\\
+Science Fair Judge, North School Hillsdale, CA Mar 2 2010\\
+SN Ia Working Group leader, SNAP Collaboration, 2001--2009\\
+Simulation Working Group leader, SNAP Collaboration, 1999--2009\\
+System Managers Group member, SNAP Collaboration, 2001--2008\\
+Review Presentation, Particle Physics Project Prioritization Panel (P5), Stanford, CA Friday, Feb. 22, 2008\\
+Organizing Committe, Key Approaches to Dark Energy, Barcelona,  Aug, 2006\\
+Internal Review Committee, Supernova Factory, 2004
+
+\section{Research Activities}
+1999--present --- Lawrence Berkeley National Laboratory
+\begin{itemize}
+\item Large Synoptic Survey Telescope - Dark Energy Science Collaboration --
+\item Euclid Consortium -- Developing hardware and mission requirements for the SN~Ia/transient survey.
+\item Dark Energy Survey -- Working on the optimization of the DES supernova survey and setting requirements
+on external spectroscopic observations. Leading the spectroscopy component of the full collaboration.
+\item Nearby Supernova Factory -- Improving the calibration of Type Ia supernovae as distance indicators.  Developing
+a toolkit for generalized spectroscopy pipelines including high-performance computing and forward-modeling.
+\item Joint Dark Energy Mission -- Developing science requirements, survey strategies, and mission configurations for
+a NASA and DOE interagency satellite experiment intended to probe dark energy.  Participation as a member of the JDEM-Interim
+Science Working Group charged with designing mission concepts for the two agencies.
+\item Supernova Acceleration Probe (SNAP) Collaboration-- Developed and implemented a simulation package,
+science requirements, survey strategies, and mission configurations for a proposed satellite experiment designed to probe dark energy.
+Led two collaboration working groups.  Contributions led to the successful passing of scientific reviews and advocacy by
+national committees.  Work on the supernova error budget and systematic uncertainties has resulted in several published papers with
+more in progress.
+\item Baryon Oscillation Spectroscopic Survey -- Developed and implemented the spectroscopic reduction pipeline for the BOSS experiment.  The software is currently processing nightly observations.
+\item Supernova Cosmology Project -- Working on the statistical analysis for high-redshift supernova cosmology presented in
+several papers.
+\end{itemize}
+1997--1999 --- Coll\`ege de France
+\begin{itemize}
+\item AGAPE -- Applied
+ HST archival data to analyze the gravitational microlensing of unresolved
+source stars within the AGAPE collaboration and to search for new events,  resulting in a published paper.
+\item EROS -- Discovering and studying supernovae at low ($z<0.2$) and high ($z > 0.4$)
+redshifts as part of the EROS supernova search and the Supernova Cosmology
+Project.  The supernovae are used to measure cosmological parameters. Work has led to papers on
+supernova rates and the cosmological distance scale.
+\item Planck -- Developing algorithms and software simulating the data expected from
+the Planck mission, a satellite that measures CMB temperature
+anisotropies.  My focus was in determining hardware constraints, optimized scanning strategies, and data processing
+methods for polarization measurements. Findings have been published.
+\end{itemize}
+1992--1997 --- Lawrence Berkeley National Laboratory
+\begin{itemize}
+\item Deepsearch (SCP) -- Discovered and studied over 28 distant supernovae, $0.35< z < 0.85$, in a
+ project aimed at measuring the mass density of the universe and the
+ Cosmological constant.  Involved in developing search software, observing,
+ and data analysis.  Resulted in the discovery of the accelerated expansion of the Universe.
+\end{itemize}
+
+\section{Invited Talks}
+Speaker, LSST Project and Community Workshop, Phoenix, AZ, Aug 14, 2014\\
+Lecture, Santa Fe Cosmology Workshop, Santa Fe, NM, Jul 22, 2014\\
+Speaker, DES-LSST Workshop, Fermi National National Laboratory, IL, Mar 26, 2014\\
+Panel Discussion, Snowmass, Minneapolis MN, July 29, 2013\\
+Seminar, LineA Seminar, Brazil, June 20, 2013\\
+Colloquium, Herzberg Institute of Astronomy, Victoria, Canada, March 12, 2013\\
+Lecture, IX Mexican School on Gravitation and Mathematical Physics, Puerto Vallarta, Mexico, Dec 5, 2012\\
+Speaker, Korean Physical Society, Oct 26, 2012\\
+Colloquium, Yonsei University, Oct 25, 2012\\
+Seminar, Asia Pacific Center for Theoretical Physics, Pohang Korea, Oct 22, 2012\\
+Speaker, 13th Marcel Grossmann Meeting, Stockholm, Sweden, July 1, 2012\\ 
+Speaker, Nobel Prize Panel, University of Stockholm, Sweden, Nov 12, 2011\\
+Lecturer, Azores School on Observational Cosmology, Angra do Heroismo, Portugal, Aug 31- Sep 6, 2011\\
+Seminar, Astronomy Department, Yonsei University, Seoul, May 6, 2011\\
+Seminar, Institute for the Early Universe, Ewha University, Seoul, May 3, 2011\\
+Seminar, Korea Institute for Advanced Study, Seoul, May 2, 20011\\
+Workshop, The Return of de Sitter, NORITA, Stockholm, March 15, 2011\\
+Seminar, Center for Particle Astrophysics, Fermilab, May 17, 2010\\
+Seminar, National Astronomy Observatory of China, Beijing, Apr 8 2010\\
+Seminar, Institute of High Energy Physics, Beijing, Apr 7 2010\\
+Seminar, Institute for the Early Universe, Ewha University, Seoul, Apr 5, 2010\\
+Workshop, First Berkeley-Paris Dark Energy Cosmology Workshop, Paris, Sep 19, 2009\\
+Conference, Frontiers of Cosmology at Dome A Antarctica, Suzhou, China, Jul 21, 2009\\
+Speaker, Particle Physics Project Prioritization Panel (P5), Stanford, CA Friday, Feb. 22, 2008\\
+Workshop, International Workshop on the Interconnection Between
+Particle Physics and Cosmology, Texas A\&M, May 14, 2007 \\
+Cosmology Seminar, University of California, Davis, Dec 7 2006\\
+Workshop, Key Approaches to Dark Energy, Barcelona,  Aug, 2006\\
+Workshop, European Dark Energy Network in Paris, Paris, Dec 9, 2005 \\
+Workshop, Probing the Dark Universe with Subaru and Gemini, Waikoloa, HI, Nov 8, 2005\\
+Colloquium, University of Missouri, Columbia, Oct 3, 2005\\
+Seminar, Laboratoire d'Astrophysique de Marseille, Apr 3, 2003\\
+Astrophysics Seminar, Univerity of California Riverside, Mar 24, 2003\\
+Seminar, University of Florida, Mar 17, 2003\\
+Colloquium, Florida Atlantic University, Mar 14, 2003\\
+Astrophysics Seminar, Los Alamos National Laboratory, Feb 27, 2002\\
+Colloquium, Purdue University, Oct 25, 2001\\
+San Mateo Astronomical Society, May 3, 2001\\
+Journal Club, Department of Astronomy, UC Berkeley, Apr 27, 2001\\
+Colloquium, Coll\`ege de France, Mar 18, 2001\\
+Colloquium, Centre de Physique des Particules de Marseille, Mar 15, 2001\\
+Workshop, Frontiers in Contemporary Physics-II at Vanderbilt University, Mar 9, 2001\\
+Colloquium, Indiana University, March 2001\\
+Colloquium, Observatoire de Meudon, Feb 2000\\
+Colloquium, Universidad de La Serena,
+Chile, Sep 21, 1998\\
+Conference,  XXXIIInd
+Rencontres de Moriond ``Fundamental Parameters in Cosmology'',
+Les Arcs 1800, France, Jan 17-24, 1998\\
+Conference, NATO Advanced Study Institute on Thermonuclear Supernovae, Aiguablava,
+Spain, June 20-30, 1995\\
+
+\section{Refereed Publications}
+\nocite{2014MNRAS.440.1498S}
+\nocite{2014ApJ...784...51K}
+\nocite{2013A&A...560A..90F}
+\nocite{2013A&A...560A..66R}
+\nocite{2013PhRvD..87l3512H}
+\nocite{2013Fourspring}
+\nocite{2013ApJ...770..108C}
+\nocite{2013ApJ...770..107C}
+\nocite{2013ApJ...766...84K}
+\nocite{2013PhRvD..87b3520S}
+\nocite{2012ApJ...753..152B}
+\nocite{2012PhRvD..85l3530S}
+\nocite{2011APh....34..847F}
+\nocite{2011JCAP...06..020K}
+\nocite{2011PASP..123..470S}
+\nocite{2011PASP..123..230K}
+\nocite{2010ApJ...716..712A}
+\nocite{2010APh....33..248K}
+\nocite{2009ApJ...700.1415N}
+\nocite{2008ApJ...686..749K}
+\nocite{2008ApJ...673..981K}
+\nocite{2007APh....28..448K}
+\nocite{2007A&A...470..411G}
+\nocite{2007APh....27..213A}
+\nocite{2006MNRAS.370..933J}
+\nocite{2006ApJ...644....1C}
+\nocite{2006PASP..118..205D}
+\nocite{2006APh....24..451K}
+\nocite{2005AJ....130.2788H}
+\nocite{2005AJ....130.2278G}
+\nocite{2005A&A...437..789N}
+\nocite{2005A&A...430..843L}
+\nocite{2004ApJ...615..595H}
+\nocite{2004A&A...423..881B}
+\nocite{2004AJ....128..387G}
+\nocite{2004A&A...421..509A}
+\nocite{2004MNRAS.347..909K}
+\nocite{2004APh....20..377R}
+\nocite{2003ApJ...598..102K}
+\nocite{2003A&A...404..145A}
+\nocite{2003MNRAS.340.1057S}
+\nocite{2002ApJ...577..120P}
+\nocite{2002PASP..114..803N}
+\nocite{2002A&A...389L..69G}
+\nocite{2002A&A...389..149D}
+\nocite{2001A&A...378.1014A}
+\nocite{2001ApJ...558..359G}
+\nocite{2001A&A...373..126D}
+\nocite{2000A&A...362..419H}
+\nocite{2000ApJ...532..340A}
+\nocite{2000A&AS..142..499R}
+\nocite{2000A&A...355L..39L}
+\nocite{2000PhST...85...47G}
+\nocite{1999A&A...351L...5E}
+\nocite{1999A&A...351...87E}
+\nocite{1999A&A...348..175E}
+\nocite{1999ApJ...517..565P}
+\nocite{1999A&A...344L..63A}
+\nocite{1999A&A...344L..49A}
+\nocite{1998A&A...337L..17E}
+\nocite{1998Natur.391...51P}
+\nocite{1997ApJ...483..565P}
+\nocite{1997ApJ...476L..63K}
+\nocite{1996ApJ...473..356P}
+\nocite{1996PASP..108..190K}
+\nocite{1995ApJ...440L..41P}
+
+\bibliography{pub}
+\bibliographystyle{unsrt}
+
+\end{resume}
+\end{document}
