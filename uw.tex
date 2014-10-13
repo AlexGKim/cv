@@ -107,42 +107,56 @@ LSST  represents the future of ground-based wide-field imaging surveys.
 A telescope with an effective 6.7-m will operate from 2022-2032, observing the available sky (18,000 square degrees over the course
 of a year)
 every few days.  In addition, a select 100 square degrees will be observed with a higher per-band cadence of every 4 days.
-A primary science objective of LSST is discovering and measuring light curves of SNe~Ia.
-The Dark Energy Science Collaboration (DESC) has formed to prepare
-to exploit  the public data products
+A primary science product of LSST is the discovery and measurement of SN~Ia light curves.
+The LSST-Dark Energy Science Collaboration (LSST-DESC) has formed and is preparing
+to exploit  the public data products that will be
 delivered by the  LSST Project;  I have identified and organized
 our work as co-chair of the SN~Ia science working group \cite{2012arXiv1211.0310L}.
-As part of the process for optimizing the LSST observing strategy (exposure times,
-observing cadence) I have developed and implemented figures of merits for the resultant supernova science
-\cite{Cadence workshop}.  I plan to continue work on the refinement of the LSST observing strategy,
-as well as furnish the Project to include transient objects in their simulations; work already in progress
-in coordination with LSST Project (including UW colleagues).
+The first order of business is to ensure that LSST itself delivers data that are as close to optimal for the science, though
+choices of filter vendor, field selection, exposure times, observing cadence, and sky tiling strategies.
+Working with the LSST Project (including UW colleagues), I have developed and implemented figures of merits for the resultant supernova science
+\cite{LSSTCadence}.  
+We are implementing realistic SN~Ia models for injection into LSST Project simulations to create high-fidelity representations
+of LSST SN data products, to use for survey optimization and algorithm development.  This ongoing work will be
+facilitated by being co-located with key players in the LSST Project.
 
-This is a case where 
-amazing synergy between DES and LSST activities.  DES has active survey data
-while the LSST Project has already developed and distributed advanced data processing
-software.  LSST software photometry on
-DES data.
+My participation in both DES and LSST offers synergistic opportunities.  There are two examples I am particularly interested
+in.  First, despite the sequence of the two experiments, the LSST Data Management has had more support and therefore
+already has a software base that is competitive with that of DES.  Indeed, there are LSST implementations of
+code that does not yet exist for DES; the LSST MultiFit, which extracts photometry simultaneously from mulitband images
+of the same source, is almost ideal for the photometric extraction of supernova signal from DES data.
+Second, a LSST Project deliverable that is critical for supernova science is a pure and efficient stream of transients.
+DES data stand as the closest available representation of the Universe that LSST will observe and are therefore
+essential in developing the LSST pipeline.
 
-
-
-\subsection{Spectroscopy and LSST}
+\subsection{Spectroscopy to Complement Imaging Surveys}
 Imaging surveys such as DES and LSST identify interesting targets through broadband photometry.
-A deeper examination of these objects requires spectroscopy. In DES we apply for competed time at
-telescopes.  I am a founding member of the OzDES collaboration, specifically formed to obtain spectroscopy
-of interesting targets identified by DES.  The observed sources represent a broad range of interests,
-including classification of live transient objects, characterization of transient host galaxies, confirmation
-of strong gravitational lens systems, redshirting of galaxy clusters, monitoring of active galactic nuclei, photometric redshifts,
+Detailed examination of these objects requires spectroscopy. Spectroscopic follow-up is not
+built into the DES and LSST Projects themselves, and so must be obtained through independent means.
+In DES we apply for competed time at
+telescopes and form external collaborations with colleagues with access to important resources.  I am a founding member of the OzDES collaboration, specifically formed to obtain spectroscopy
+of interesting DES targets using the AAOmega-2dF 400-fiber multi-object spectrograph that covers
+3 square degrees at the Australian Astronomical Telescope.
+The sources we observe represent a broad range of scientific interests,
+including the classification of live transient objects, characterization of transient host galaxies, confirmation
+of strong gravitational lens systems, redshifting of galaxy clusters, monitoring of active galactic nuclei, photometric-redshift
+calibration,
 and
-standard stars.  My primary interest in OzDES is obtaining flux-limited transient sample to understand the
-underlying population of SNe~Ia  \cite{2006MNRAS.370..933J} and interlopers that could masquerade as SNe~Ia in photometric
-data from DES and LSST.  Keeping eye open for other opportunities.
-OzDES has made first identification of DES-discovered supernova \cite{2013ATel.5568....1C}.
+standard stars candidates.  My primary interest in OzDES is classifying a flux-limited transient sample to understand the
+underlying population of SNe~Ia  \cite{2006MNRAS.370..933J}, and interlopers that could contaminate DES samples
+without classification.  OzDES has made first identification of DES-discovered supernova \cite{2013ATel.5568....1C}.
+Otherwise, I am interested in the discovery of new strong gravitational lens systems, and the potential use
+of reverberation mapping of active galactic nuclei as a new cosmic distance indicator.
 
-LSST will generate many targets for spectroscopy, both quiescent and transient objects.  I am preparing
-resources for this.  Just as the synergy between OzDES and DES, the Dark Energy Spectroscopy Instrument
+
+LSST will generate many targets for spectroscopy, both quiescent and transient objects.  I am convinced that
+a major independent collaboration is called for, one that will have competitive advantage over those with the
+public imaging data provided by the Project.
+I am therefore exploring possible resources that can contribute to LSST spectroscopy followup.
+Just as with OzDES and DES, the Dark Energy Spectroscopy Instrument
 (DESI) experiment can follow LSST
-targets.  DESI is a spectrograph.   Within the DESI collaboration, I have proposed the use of unused fibers during the
+targets.  DESI is a 5000-fiber multi-object spectrograph covering $>3\deg$-diameter
+field of view that will be mounted on the 4-m Mayall telescope at Kitt Peak National Observatory.   Within the DESI collaboration, I have proposed the use of unused fibers during the
 DESI survey, and the full resource of fibers during bright time, on LSST targets.
 
 SN~Ia spectroscopic subclassification requires different instruments on a broader range of
@@ -200,6 +214,8 @@ My current interest is in non-linear dimensionality reduction: SN~Ia light curve
 are governed by physical processes that are not efficiently described through linear combination.
 Supernova.  DESI target selection.  Classification.
 
+eScience Institute.
+
 \subsection{Collaborations}
 In the above description of my research interests, I refer to a number of major collaborations of which I am a member.  To
 present a clear timeline of my  activities at UW, I review the subset of collaborations with their dates of operation.
@@ -249,6 +265,7 @@ Hidden bias.
 \section{References: Select Publications}
 The following references represent a selection from my publication record associated with the research
 activities that I will engage in at the University of Washington.
+
 \bibliographystyle{hplain}
 \bibliography{pub}
 \end{document}
