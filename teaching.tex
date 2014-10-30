@@ -2,6 +2,15 @@
 \usepackage{aas_macros}
 \usepackage[letterpaper, margin=1in]{geometry}
 
+\usepackage{etoolbox}
+\newtoggle{UW}
+%\toggletrue{UW}
+\iftoggle{UW}{
+    \newcommand{\where}{University of Washington }
+}{
+\newcommand{\where}{University of Michigan }
+}
+
 \makeatletter
 \renewenvironment{thebibliography}[1]
      {%\section*{\refname}% <--- outcommented
@@ -39,7 +48,7 @@ is a field that generates both lay and professional interest, giving me informal
 educate.  I look forward to the rewards and challenges of a new role teaching as a professor. 
 
 %goal: think like an expert
-My principle goal in teaching is for students to appreciate the beauty that drew me science: the quest to
+My principle goal in teaching is for students to appreciate the beauty that drew me to science: the quest to
 describe  observed complexity with
 theoretical simplicity.  Practically I want students to think as a professional scientist, being able to 
 rationalize complex input information using simple explanations.
@@ -49,7 +58,7 @@ outside the classroom.
 In my earlier teaching of physics,  I emphasized the commutative version
 of the above-stated goal: that theoretical simplicity explains observed complexity.  I  emphasized the foundations of physics
 rather than problem solving. As an experienced astrophysicist, I had come to
-appreciate implicitly that theory is only successful if it solve problems.  Only by changing perspectives
+appreciate implicitly that theory is only successful if it solves problems.  Only by changing perspectives
 did I appreciate that my students lacked the experience
 to value theory on its own.  A  professor once told me
 ``You don't really understand the theory if you can't solve the problems,'' a philosophy that I now  appreciate and
@@ -59,7 +68,7 @@ apply in my own teaching.
 % target student thinking and learning needs.
 The teaching process  begins with understanding the students, identifying their goals and motivations, their abilities in critical thinking and
 problem solving, and their preconceptions.  When a course first meets, I poll students on why they are taking the
-class.  It is from their initial condition that I can chart the leaning path toward the specific goals targeted
+class.  It is from their initial condition that I can chart the learning path toward the specific goals targeted
 for the class. 
 
 % motivate
@@ -68,7 +77,7 @@ necessary to master solving the difficult problems in physics and astronomy.
 In terms of the course,
 it is important in the beginning to establish  to the students realistic goals and the path that the goals will be realized.
 Students can be given partial ownership of the course by allotting time in which they can lead discussion and question the
-professor.,
+professor.
 In terms of the material, problems need to be motivated by real world problems.
 This is particularly true when presenting advances that were made so far in the past, that it is not obvious
 why the work was so exciting in its day. 
@@ -80,10 +89,10 @@ happens in a classroom.
 My teaching goal is for the students to approach problems as an expert would, therefore
 the valuable time I share with students is best spent having each side studying how the other
 solves problems.  Both sides need to focus on breaking down the steps taken in problem solving: 
-clarification of what question is is being asked,
+clarification of what question is  being asked,
 isolation of relevant information, 
 identification of the theory and models that apply, finding the simplest path toward solution,
-going through the mechanics of solution, and confirmation that the results is reasonable.
+going through the mechanics of solution, and confirmation that the result is reasonable.
 My detailed play-by-play of my navigation though problem sets  allows students to observe how a scientist thinks on his
 feet and my reliance on first, rather than derived, principles.  Conversely, observation of how students
 approach challenging but doable problems will allow me to identify and confront common pitfalls they may make.
@@ -93,10 +102,13 @@ It is through intensive practice that expertise is earned, and it is in the clas
 Homework is the primary vehicle through which students gain the information needed to solve problems
 through reading assignments, and to gain more practice on their own time with assigned problem sets.
 
-Independent of teaching philosophy, I will draw upon the wealth experience, research, and teaching aids that are
+Independent of teaching philosophy, I will draw upon the wealth of experience, research, and teaching aids that are
 available.
 Colleagues and the internet have served as excellent resources for advice and ideas in preparing
-my own lectures, while friends in the field of physics eduction keep me advised of current trends. 
+my own lectures, while friends in the field of physics education keep me advised of current trends. 
+ \iftoggle{UW}{The University of Washington Institute for Science & Mathematics Education}{I will avail
+ myself to the resources for faculty at The Center
+ for Research on Learning and Teaching.}
 
 On a broader scope, I want to participate in increasing underrepresented minorities science majors.
 Serving on the Lawrence Berkeley National Laboratory Diversity \& Inclusion Committee, one (of many) things I have
@@ -104,8 +116,9 @@ learned is the value of diversity in science.  Science is a social endeavor, inc
 the increasingly larger collaborations formed to address big science.  The informational diversity
 coming  from the inclusion of different  backgrounds and strengths fosters innovation.
 Unclogging choke points at all levels of education is important.  I have tutored math at a predominantly African American
-elementary school, and at UW I plan to work on increasing undergraduate enrollment through the
-Office of Minority Affairs \& Diversity Recruitment and Outreach
+elementary school and at  \where \iftoggle{UW}{I plan to work on increasing undergraduate enrollment through the
+Office of Minority Affairs \& Diversity Recruitment and Outreach.}{by being a 
+mentor in the Michigan Louis Stokes Alliance for Minority Participation.}
 
 
 \end{document}
