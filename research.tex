@@ -1,4 +1,5 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+
 \usepackage{aas_macros}
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{etoolbox}
@@ -6,9 +7,9 @@
 \newtoggle{UW}
 %\toggletrue{UW}
 \iftoggle{UW}{
-    \newcommand{\where}{the University of Washington }
+    \newcommand{\where}{the University of Washington}
 }{
-\newcommand{\where}{the University of Michigan }
+\newcommand{\where}{the University of Michigan}
 }
 
 \makeatletter
@@ -42,18 +43,18 @@
 \maketitle
 
 I am an observational astrophysicist, with interests in
-cosmology, supernovae, transients, and machine learning.
-As a new faculty member, I will come to the \where
+cosmology, supernovae and other transients, and machine learning.
+As a new faculty member, I will come to \where{}
 primed as a key player in major collaborations, with a
 track record in a diverse range of research.  I  value excellence
 in teaching and research as part of the student educational experience
-as a means of enriching our scientific community.
+and as a means to  further the enrichment of our scientific community.
 
 \section{Research Activity}
 My principal field of research is  Type~Ia Supernova (SN~Ia) Cosmology. 
 SNe~Ia are exploding stars which have known luminosity at peak brightness, and are  bright enough to be
 seen to distances beyond 10 billion light years.  It is through the work
-performed as part of my PhD thesis that accelerating
+performed as part of my PhD thesis that the accelerating
 expansion of the Universe was discovered \cite{1997ApJ...483..565P}.  Today, SNe~Ia remain a key tool used
 to measure the cosmic expansion history, which is used both to establish
 the  backdrop within which the contents of the Universe evolve,
@@ -64,8 +65,8 @@ as laid out in
 the Decadal Survey from the astrophysics and astronomy communities, and the Snowmass
 \cite{2013arXiv1309.5386D,2013arXiv1309.5382K} and P5 reports
 from the high-energy physics community.  I here detail my research activities,
-which are critical to the success of high-redshift supernova cosmology.
-I lay out my interests beyond just supernovae, in the data provided by imaging surveys,
+which are critical to the success of high-redshift supernova cosmology,
+and some of my interests beyond the supernova field: in the products of astronomical imaging surveys,
 novel probes of cosmology, and advanced statistical tools such as machine learning.
 
 \subsection{Type Ia Supernovae as Cosmological Distance Indicators}
@@ -74,19 +75,22 @@ to achieve the lofty objectives of next generation experiments such as the Dark 
 Survey Telescope (LSST).  The unique data set of
 the Nearby Supernova Factory (SNfactory) collaboration consists of the spectrophotometric
 time series, covering pre-maximum to 40-days post-maximum phases,
-of  $\sim 150$ nearby ($0.03<z<0.08$) SNe~Ia.
+of  $\sim 150$ nearby ($0.03<z<0.08$) SNe~Ia, obtained with an integral field spectrograph (IFS).
+The IFS provides a 3-d view of the sky: a spectrum is obtained for each pixel of a spatial grid covering
+the field of view.   This spatial sampling enables the extraction of supernova flux from contaminating host-galaxy
+light using  techniques used in image subtraction.
 I have used these data  to identify new
 empirical
 parameters based on synthetic broad-band photometry that reduce distance uncertainties from 7\% to 4.5\% \cite{2013ApJ...766...84K}
 while eliminating systematic biases correlated with host-galaxy
 properties \cite{2014ApJ...784...51K}.  This work represents only the beginning of the
-potential information that can be mined from  SNfactory data: The next order of business
+potential information that can be mined from  SNfactory data: the next order of business
 is to include spectroscopic information (rather than limiting ourselves to broadband photometry)
 and apply non-linear dimensionality reduction to efficiently find and parameterize
 subpopulations   within the SN~Ia family.  We must furnish tools usable by the community so that
 knowledge gained from the
-exquisite data from the SNfactory can be applied to the lower-resolution, lower signal-to-noise data obtained
-by DES and LSST.  I am currently mentoring a graduate student on producing the next-generation empirical
+exquisite data of the SNfactory can be applied to the lower-resolution, lower signal-to-noise data obtained
+by DES and LSST.  To these ends, I am currently mentoring a UC Berkeley graduate student on producing the next-generation empirical
 model of SN~Ia luminosities.
 
 \subsection{Measurement of the Expansion History of the Universe With Imaging Surveys  DES and LSST}
@@ -97,104 +101,103 @@ through the 2020s.  However,
 the most important and challenging product these surveys must provide is not the Hubble curve itself,
 but rather its uncertainties: trusted error bars must accompany any experimental evidence for the exclusion
 of the Cosmological
-Constant. My research focuses on
+Constant as the cause of the acceleration. My research focuses on
 minimizing and quantifying the
-systematic uncertainties that will dominate the error budget from DES and LSST \cite{2004MNRAS.347..909K}.  
+systematic uncertainties that will dominate the error budgets from DES and LSST \cite{2004MNRAS.347..909K}.  
 
 DES is currently in its second year of a five-year survey running at the 4-m Blanco Telescope in Chile.  It is performing
 cadenced observations of 30 square degrees in order to discover and generate SN~Ia light curves out
 to $z\sim1$.
 The principal challenge for DES (and LSST) is that these surveys do
 not provide all the information necessary for precision cosmology.
-Unlike  supernovae found in the current literature, the vast majority of objects from DES
-will not have spectroscopic classification as SN~Ia, nor will their
-measurements have the signal-to-noise, restframe wavelength coverage, and wavelength resolution that allow 
-the characterization of SN~Ia subclasses.  This classification is necessary to track redshift-dependent evolution of 
-the SN~Ia population.  In DES, I  formulated the strategy for performing the cosmology analysis
+Unlike previous surveys, the vast majority of SNe~Ia from DES
+will not have spectroscopic classification, nor will their
+measurements have the signal-to-noise, restframe wavelength coverage, and wavelength resolution that allow  for
+the characterization of their SN~Ia subclass.  This classification is necessary to track redshift-dependent evolution of 
+the SN~Ia population, an important source of systematic error in the Hubble diagram.  In DES, I  formulated the strategy for performing the cosmology analysis
 with a rigorous quantification of systematic uncertainties.  These uncertainties are  derived from a subset of 
-DES objects that receive intensive observations beyond what is standard;
-bias is measured as the difference between distances inferred with
+DES objects that receive intensive observations beyond what is standard, with
+biases measured as the difference between distances inferred with
 and without these extra data. 
-DES plans to begin its cosmological analyses in earnest at the end
-of this semester: I am now  working with the DES SN working group to implement my analysis strategy.
+The DES SN Working Group is beginning its cosmological analyses in earnest at the end
+of the 2014B telescope semester and I am now leading efforts to implement my analysis strategy.
 
 LSST  represents the future of ground-based wide-field imaging surveys.
-A telescope with an effective 6.7-m diameter will operate from 2022-2032, observing the available sky (18,000 square degrees over the course
+A telescope with an effective 6.7m diameter will operate from 2022-2032, observing the available sky (18,000 square degrees over the course
 of a year)
 every few days in one of six bands.  In addition, a select $\sim 100$ square degrees will be observed with a higher per-band
 cadence of every 4 days
-in each of six bands.
+in each of the six bands.
 A primary science product of LSST is the discovery and measurement of SN~Ia light curves.
 The LSST-Dark Energy Science Collaboration (LSST-DESC) is preparing
 to exploit  the public data products that will be
-delivered by the  LSST Project;  I have identified and organized
-work as co-chair of the SN~Ia science working group \cite{2012arXiv1211.0310L}.
-The first order of business is to ensure that LSST itself delivers data that are as close to optimal for the science, though
+delivered by the  LSST Project.  As co-chair of the LSST-DESC  SN~Ia science working group,
+ I have identified and organized this preparatory work \cite{2012arXiv1211.0310L}.
+The first order of business is to ensure that LSST itself delivers data that are  close to optimal for our science, though
 the selections of filter vendor, survey fields, exposure times, observing cadence, and sky tiling strategy.
 Working with the LSST Project\iftoggle{UW}{ (including UW colleagues)}{},
 I have developed and implemented survey figures of merit for the resultant supernova science
 \cite{LSSTCadence}.  
-We are incorporating realistic SN~Ia models  into LSST Project simulations to create high-fidelity representations
-of expected SN light curves, for use in survey optimization and algorithm development.
+We are incorporating realistic SN~Ia models  into LSST  data simulators to create the high-fidelity representations
+of expected SN signal necessary for survey optimization and algorithm development.
 \iftoggle{UW}{Progress on this ongoing work will be
 facilitated by my being co-located with key players in the LSST Project.}{}
 
 I look forward to taking advantage of my participation in both DES and LSST through two new projects.
-First, despite the temporal ordering of the two experiments, the LSST Data Management has had more support and therefore
+First, despite the temporal ordering of the two experiments,  LSST Data Management 
 already has a software base that is competitive with that of DES.  I plan to examine whether the LSST code that extracts photometry simultaneously from mulitband images
-of the same source, can be modified for use on the photometric extraction of supernova signal from DES data.
-Second, a LSST Project deliverable that is critical for supernova science is a pure and efficient stream of transients.
+of the same source, written for weak gravitational lensing analysis, can be modified for the photometric extraction of supernova signal from DES data.
+Second,  a pure and efficient stream of variable objects is an LSST  deliverable that is critical for supernova science.
 I plan to use
-DES data, as the closest available representation of the Universe that LSST will observe, to develop the 
-analysis of the transient stream.
+DES data, as the closest available representation of the Universe that LSST will observe, to test the performance
+of the transient pipeline.
 
-
-\subsection{Spectroscopy to Complement Imaging Surveys}
+\subsection{Spectroscopy That Complements Imaging Surveys}
 Imaging surveys such as DES and LSST identify interesting targets through broadband photometry.
 Detailed examination of these objects requires spectroscopy. Spectroscopic follow-up is not
 built into the DES and LSST Projects themselves, and so must be obtained through independent means.
-In DES we apply for competed time at
-telescopes, and form external collaborations with colleagues with institutional access.  I am a founding member of the OzDES collaboration, specifically formed to obtain spectroscopy
-of interesting DES targets using the AAOmega-2dF, a 400-fiber multi-object spectrograph which covers
-3 square degrees, that is mounted on the Australian Astronomical Telescope.
-The sources we observe cater to a broad range of scientific interests,
+In DES we compete for public time at
+telescopes, and form external collaborations to access other telescopes.  I am a founding member of the OzDES collaboration, specifically formed to obtain spectroscopy
+of interesting DES targets using the AAOmega-2dF mounted on the Australian Astronomical Telescope, which
+covers 3 square degrees with a 400-fiber multi-object spectrograph.
+The sources we observe cater to a broad range of astrophysical interests,
 including the classification of live transients, characterization of their host galaxies, confirmation
-of strong gravitational lens systems, getting redshifts of galaxy clusters, monitoring of active galactic nuclei, photometric-redshift
+of strong gravitational lens systems, obtaining redshifts of galaxy clusters, monitoring of active galactic nuclei, photometric-redshift
 calibration,
-and
-standard stars candidates.  My primary interest in OzDES is to obtain a flux-limited transient sample with which to understand the
-underlying population of SNe~Ia  \cite{2006MNRAS.370..933J}, and interlopers that could contaminate DES sample.  OzDES has made first identification of DES-discovered supernova \cite{2013ATel.5568....1C}.
+and identification of stars that can be used as
+flux standards.  OzDES  made the first identification of a DES-discovered supernova \cite{2013ATel.5568....1C} and continues to churn out transient classifications and thousands of galaxy 
+redshifts. My primary interest in OzDES is to obtain a flux-limited sample with which to understand the
+underlying population of SNe~Ia  \cite{2006MNRAS.370..933J} and interloping contaminants that constitute the DES supernova
+sample.  
 Additionally, I am interested in the discovery of new strong gravitational lens systems, and the potential use
 of reverberation mapping of active galactic nuclei as a new cosmic distance indicator.
 
 
 LSST will generate both quiescent and transient targets for spectroscopy.  I am convinced that
-a major independent collaboration is called for, one that will have competitive advantage over those with the
-publicly provided Project data.
+a major independent collaboration is called for, one that will have competitive advantage over those with only
+the publicly released data.
 I am therefore exploring possible resources that can contribute to LSST spectroscopy followup.
 Just as OzDES is an almost perfect spectroscopic complement to  DES, 
-DESI has the field of view and multiplexing scaled to LSST;
-DESI is a 5000-fiber multi-object spectrograph covering $>3\deg$-diameter
+the Dark Energy Spectroscopic Instrument (DESI)  has a field of view and multiplexing matched to LSST;
+DESI is a 5000-fiber multi-object spectrograph covering a $>3\deg$-diameter
 field of view that will be mounted on the 4-m Mayall telescope at Kitt Peak National Observatory.   Within the DESI collaboration I have proposed observing LSST targets, both using unused fibers during the
 DESI survey and in a dedicated bright-time survey
-for unfettered use of all DESI fibers.
+with unfettered use of all fibers.
 
-SN~Ia spectroscopic subclassification requires an integral field spectrograph (IFS) for
+SN~Ia spectroscopic subclassification requires an IFS for
 the robust photometry of supernovae that cannot be obtained with fiber or slit spectrographs:
-indeed, the primary  instrument for supernova {\it photometry} in WFIRST is an IFS.  To take
-advantage of LSST products, the community needs a ground-based
-network of 2 to 10-m telescopes equipped with  IFS's at the ready to
-point at LSST-discovered transients, which will span over a broad  brightness range.  I am currently exploring
-programs for the design and building of spectrographs similar to that planned for WFIRST for installation on ground-based
-observatories.  Such instruments can serve as the backbone for
-new collaborations
-for SN~Ia-specific spectroscopy of LSST discoveries. 
+indeed, the primary  instrument for supernova {\it photometry} in NASA's WFIRST-AFTA satellite is an IFS.  To take
+advantage of LSST discoveries, the community needs a ground-based
+network of 2- to 10-m telescopes equipped with  IFS's at the ready for intensive followup observing.  I am currently exploring
+programs for the design and building of spectrographs for installation at ground-based
+observatories that  can serve as the backbone for a
+new collaboration to study SNe~Ia discovered by LSST. 
 
 \subsection{Cosmology with Space-Based Surveys}
 The next leap in supernova cosmology requires the stable platform, infrared coverage, and exquisite image
 quality afforded by a space telescope.  I have played a leading role in the development
 of science and system requirements, and the experimental and survey design of the proposed
-and realized space missions SNAP, JDEM, and Euclid
+and approved space missions SNAP, JDEM, and Euclid
 \cite{2006PASP..118..205D, 2011PASP..123..470S, 2013Fourspring, 2014arXiv1409.8562A}.
 A  high-redshift supernova program is one of the science 
 drivers of
@@ -202,27 +205,27 @@ NASA's WFIRST-AFTA satellite.  A call for science team
 proposals is anticipated  within the next two years.  As a member of the JDEM Interim Science Working Group, I designed the
 supernova observing strategy now adopted by WFIRST, and I calculated the performance for SNAP's IFS which is similar to the one baselined for WFIRST.  Saul Perlmutter and I intend
 to remount a prototype IFS built for SNAP as a testbed for
-the WFIRST instrument.  Independently, I am contributing a SN~Ia Supernova section to a White Paper 
+the WFIRST instrument.  Independently, I am contributing a SN~Ia  section to a White Paper 
 edited by David Spergel and Bhuvnesh
 Jain, which details an expanded science case for WFIRST with specific emphasis
-on synergies with LSST.  It is in these ways that I am positioning myself to be a key member of the winning WFIRST science
+on synergies with LSST.  I am thus positioning myself to be a key member of the winning WFIRST science
 team.
 
 
 \subsection{Novel Cosmological Probes}
 Direction in our field is driven by a combination of community consensus and emergent ideas.
 The research presented so far  lie  within the
-mainstream plan laid out by the agencies funding wide-field imaging surveys
+mainstream plan laid out by the funding agencies
 \cite{2013arXiv1309.5386D,2013arXiv1309.5382K}.
 Nevertheless, scientific curiosity demands looking into speculative but potentially game-changing
-techniques, just as we did back in the early days of high-redshift supernova cosmology.
+techniques, just as we did with our early high-redshift supernova search.
 I am intrigued with the potential of measuring cosmic distances using delays in the arrival times of light from multiple images
 of strongly lensed quasars.  The a priori unknown intrinsic light curve of the source and differing microlensing
 in the image paths complicate the determination of the time delay.  I developed a
 non-linear regression method to simultaneously model the intrinsic light curve, independent foreground
-stochastic processes, and fit the time delay \cite{2013PhRvD..87l3512H}.  With the discovery of more 
-strongly-lensed quasars with DES and LSST, modeling of the lens-system mass distribution, and accurate
-time delay measurements, strongly-lensed
+stochastic processes, and fit for the time delay \cite{2013PhRvD..87l3512H}.  With the discovery of more 
+strongly-lensed quasars with DES and LSST, modeling of their lens-system mass distributions, and accurate
+time-delay measurements, strongly-lensed
 quasars can emerge as the next cross-cutting probe of Dark Energy, highly complementary with existing methods.
 
 Redshift drift provides the most direct  probe
@@ -232,40 +235,41 @@ and astrophysical challenge
 in making such a measurement within a human lifetime
 is that the small signal calls for $10^{-10}$ redshift precisions.  Intriguingly, the wavelength resolution needed to measure
 cosmological redshift drift is similar to that needed for the discovery of planets through stellar doppler shifts.
-Interferometric spectrographs designed for planet searches may provide the redshift accuracies for emission-line galaxies
-that allow the measurement of redshift drift
+Interferometric spectrographs motivated by planet searches may provide the
+requisite redshift accuracies for some emission-line galaxies
 \cite{2014arXiv1402.6614K}.
 I  am examining whether the astrophysical and instrumental challenges in the feasibility of such a program can be overcome.
 Ongoing  emission-line-galaxy  spectroscopic surveys such
 as eBOSS, DESI, and the spatially-resolved CALIFA will identify and characterize
-galaxies that are well-suited for the measurement, and the building of prototype spectrographs will demonstrate that
-instrumental precisions and accuracies can be achieved.
+galaxies that are well-suited for the measurement, while the building of a prototype spectrograph will demonstrate that
+instrumental  accuracies can be achieved.
 
 \subsection{Statistical Methods in Astrophysics}
 The scientific program I have described often involves regression, classification, dimensionality reduction,
-and machine learning, topics at the intersection of science, statistics, and computing.  I have applied Gaussian Process modeling
-on a diverse range of applications, principal component
+and machine learning, topics at the intersection of science, statistics, and computing.  In my work,
+I have applied Gaussian Process modeling, principal component
 analysis (PCA) and expectation maximization PCA \cite{2012PhRvD..85l3530S,2013ApJ...766...84K,
 2013PhRvD..87l3512H}, in some cases programming and running on high performance computers.
 I am now pursuing non-linear dimensionality reduction, which can more efficiently encapsulate
 the physical processes that govern SN~Ia light curves and spectra.
 Diffusion maps provide a non-linear coordinate transformation based on the connectivity of a set of points.
 I am now starting to explore its use, directing a graduate student on an effort
-to efficiently capture diversity in SN~Ia spectral time series, and for classification of large red galaxies in DES
+to  capture diversity in SN~Ia spectral time series,  for the classification of large red galaxies in DES
 and for the selection of emission line galaxies that will be targeted by DESI.
 
+\iftoggle{UW}{
 My interest in the application of statistics on cosmological data
 was born out of interaction with statisticians, computer scientists,
 and scientists. I have found that real connections are formed not only through discussion,
 but by identifying new projects and the joint writing of new proposals.
 I look forward to engaging in
 the eScience Institute, which provides an excellent environment to develop new ideas and applications
-for machine learning and astrophysics on high-performance computers.
+for machine learning and astrophysics on high-performance computers.}{}
 
 
 \section{Collaborations}
 I have referred to a number of collaborations of which I am a member, whose benefits of participation
-and data  I will bring to \where.  For clarity, I list these collaborations and their dates of operation.
+and data  I will bring to \where{}.  For clarity, I list these collaborations and their dates of operation.
 
 \begin{description}
 \item[SNfactory (present -- 2015)]  Provides a unique dataset of
@@ -275,22 +279,22 @@ analysis of DES and LSST.
 \item[DES (present -- 2018)] Currently collecting what will be the state-of-the-art deep/wide-field/multi-band
 imaging survey.   The ``Stage III'' dark energy experiment, DES will provide the leading supernova
 cosmology result in the near future.
-\item[OzDES (present -- 2018)] Currently collecting thousands of spectra of interesting targets identified by DES,
-filling an essential role in the spectroscopy needs.
-\item[DESI (2018-- 2025)]  Primarily a galaxy and quasar redshift survey, the instrumentation is well matched for
-getting spectroscopy of targets identified by LSST. Passed the first DOE funding review.
-\item[LSST-DESC (2022 -- 2032)]  The ``Stage IV'' dark energy experiment, that will produce large streams of
+\item[OzDES (present -- 2018)] Currently collecting thousands of spectra of  targets identified by DES,
+filling an essential role in our spectroscopy needs.
+\item[DESI (2018-- 2025)]  Primarily a galaxy and quasar redshift survey, the instrumentation is well-matched for
+ spectroscopy of targets identified by LSST. Passed the first DOE funding review.
+\item[LSST-DESC (2022 -- 2032)]  The ``Stage IV'' dark energy experiment that will produce large streams of
 transient discoveries and light curves, including SNe~Ia over a broad redshift range.
 \end{description}
 
 I am working to build new collaborations that are critical for the dark energy program, 
 to
-spectroscopically follow-up LSST targets, and to serve as the WFIRST science team.
+spectroscopically follow-up LSST targets, and to be a member of the WFIRST science team.
 
 
 \section{References: Select Publications}
 The following references represent a selection from my publication record associated with the research
-activities that I will engage in at \where.
+activities that I will engage in at \where{}.
 
 \bibliographystyle{hplain}
 \bibliography{pub}
